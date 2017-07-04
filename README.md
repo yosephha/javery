@@ -9,47 +9,47 @@
 
 ### Implementation
 
-#### $j(argument)
+#### ```$j(argument)```
 
-- Returns an instance of DOMNodeCollection with a list of all the elements within the document that match the provided string with CSS selector
+- Returns an instance of ```DOMNodeCollection``` with a list of all the elements within the document that match the provided string with CSS selector
 
-- If argument is an HTML element it returns an instance of DOMNodeCollection with a list of all the elements within the document.
+- If argument is an HTML element it returns an instance of ```DOMNodeCollection``` with a list of all the elements within the document.
 
 - If argument is a function it adds the function to a callback queue so it can be called after document loads.
 
 #### DOMNodeCollection prototypes
-  - html(el)
+  - ```html(el)```
     -  sets or gets innerHTML of 'el' based on the type of el
-  - empty
+  - ```empty()```
     - Erases content of all nodes  
-  - append(child)
+  - ```append(child)```
     -  Appends the outerHTML of an HTML element, a string, or each element in a javery wrapped collection to the innerHTML of all the nodes  
-  - attr(key, value)
+  - ```attr(key, value)```
     - If key is the only argument provided, it returns the value for that key. If both arguments are provided it sets the value for the provided key for all the nodes
-  - addClass(class)
+  - ```addClass(class)```
     - Adds class to all the nodes
-  - removeClass(class)
+  - ```removeClass(class)```
     - Removes class from all the nodes
 
 #### DOM Traversal
-  - children
+  - ```children()```
     - Returns an instance of DOMNodeCollection of all the nodes' children
-  - parent
+  - ```parent()```
     - Returns an instance of DOMNodeCollection of all the nodes' parents
-  - find(element)
+  - ```find(element)```
     - Returns an instance of DOMNodeCollection of all the nodes matching the selector that are descendants of the nodes
-  - remove
+  - ```remove()```
     - Removes the HTML and all the nodes from the DOM
 
 #### Event Listeners
-- on(eventName, callback)
+- ```on(eventName, callback)```
   - Adds event handler to all the nodes
-- off(eventName)
+- ```off(eventName)```
   - Removes event handler from all the nodes by checking the eventName property
 
 #### AJAX
 
-- $j.extend(base, ...otherObjs)
+- ```$j.extend(base, ...otherObjs)```
   - Merges two or more objects
-  $j.ajax(options)
-  - Sends uses XMLHttpRequest to make asynchronous AJAX request
+- ```$j.ajax(options)```
+  - Sends uses ```XMLHttpRequest``` to make asynchronous AJAX request
