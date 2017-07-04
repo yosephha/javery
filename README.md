@@ -30,4 +30,26 @@
     - Adds class to all the nodes
   - removeClass(class)
     - Removes class from all the nodes
-### Future Plans
+
+#### DOM Traversal
+  - children
+    - Returns an instance of DOMNodeCollection of all the nodes' children
+  - parent
+    - Returns an instance of DOMNodeCollection of all the nodes' parents
+  - find(element)
+    - Returns an instance of DOMNodeCollection of all the nodes matching the selector that are descendants of the nodes
+  - remove
+    - Removes the HTML and all the nodes from the DOM
+
+#### Event Listeners
+- on(eventName, callback)
+  - Adds event handler to all the nodes
+- off(eventName)
+  - Removes event handler from all the nodes by checking the eventName property
+
+#### AJAX
+
+- $j.extend(base, ...otherObjs)
+  - Merges two or more objects
+  $j.ajax(options)
+  - Sends uses XMLHttpRequest to make asynchronous AJAX request
