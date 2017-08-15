@@ -1,5 +1,7 @@
 ## javery
 
+[Demo](https://www.yoseph.me/javery-demo/)
+
 ### Features
 - Select html elements by id, class or tag
 - Add and Remove class to a tag
